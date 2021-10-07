@@ -229,6 +229,30 @@
           </div>
         </div>
       </div>
+
+      <!-- Section Contact -->
+
+    <h2 class="titre-contact">FORMULAIRE</h2>
+
+    <section id="contact">
+      <form>
+        <label for="nom">NOM *</label>
+        <input type="text" id="nom" />
+        <label for="entreprise">ENTREPRISE</label>
+        <input type="text" id="entreprise" />
+        <label for="telephone">TELEPHONE</label>
+        <input type="text" id="telephone" />
+        <label for="email">EMAIL *</label>
+        <input type="text" id="email" />
+
+
+        <label for="txt-area">MESSAGE</label>
+        <textarea id="txt-area"></textarea>
+
+        <button class="form-btn  send" type="submit">Envoyer</button>
+      </form>
+    </section>
+
     </main>
     <!-- Footer -->
     <footer>
@@ -257,7 +281,7 @@
           <li>
             <a href="https://www.linkedin.com/in/olivier-villevieille-25533014a/"
             target="_blank"
-            rel="noopener noreferrer"">
+            rel="noopener noreferrer">
               <img src="ressources/linkedin.svg" sizes="30vw"
               width="30"
               height="30"
@@ -300,6 +324,16 @@
         >
       </p>
     </footer>
+    <!-- Email js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+          
+          emailjs.init("user_g7CURJrWMliiDLtwUyi4m");
+      })();
+    </script>
+    <!-- Main js -->
+   
     <script src="js/index.js"></script>
   </body>
 </html>
