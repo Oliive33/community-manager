@@ -21,22 +21,36 @@ choixTarifs.forEach((choix) => {
 });
 // email js
 
-function send() {
-  emailjs
-    .send("service_qlypdrv", "template_q4hefec", {
-      name: document.querySelector("#nom").value,
-      company: document.querySelector("#entreprise").value,
-      phone: document.querySelector("#telephone").value,
-      email: document.querySelector("#email").value,
-      message: document.querySelector("#txt-area").value,
-    })
-    .then(
-      (response) => {
-        console.log("succes", response.status);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+// function send() {
+//   emailjs
+//     .send("service_qlypdrv", "template_q4hefec", {
+//       name: document.querySelector("#nom").value,
+//       company: document.querySelector("#entreprise").value,
+//       phone: document.querySelector("#telephone").value,
+//       email: document.querySelector("#email").value,
+//       message: document.querySelector("#txt-area").value,
+//     })
+//     .then(
+//       (response) => {
+//         console.log("succes", response.status);
+//       },
+//       (error) => {
+//         console.log(error);
+//       }
+//     );
+// }
+// document.querySelector(".send").addEventListener("click", send());
+
+//Btn
+function btnHover() {
+  document.querySelector(".form-btn").addEventListener("mousemove", (e) => {
+    const x = e.pageX - e.target.offsetLeft;
+    const y = e.pageY - e.target.offsetTop;
+
+    // console.log(x + " / " + y);
+
+    e.target.style.setProperty("--x", `${x}px`);
+    e.target.style.setProperty("--y", `${y}px`);
+  });
 }
-document.querySelector(".send").addEventListener("click", send());
+btnHover();

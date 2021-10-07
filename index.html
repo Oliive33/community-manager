@@ -51,13 +51,7 @@
   <body>
     <nav id="navbar">
       <div class="nav-elements" id="nav-elements">
-        <img
-          src="./ressources/logo-avatar.png"
-          width="100"
-          height="100
-        "
-          alt="logo"
-        />
+        <img src="./ressources/logo-avatar.png" alt="logo" />
         <ul class="nav-links">
           <li><a href="#home">Community Manager</a></li>
           <li>
@@ -74,12 +68,12 @@
     </nav>
     <main>
       <!-- Container global -->
-      <h1 class="titre-global titre-tarifs">
+      <h1 id="home" class="titre-global titre-tarifs">
         Trouvez le tarif qu'il vous faut.
       </h1>
       <hr class="separation" />
       <div class="container-tarifs">
-        <h2 class="titre-secondaire titre-tarifs" id="home">PRESTATIONS :</h2>
+        <h2 class="titre-secondaire titre-tarifs">PRESTATIONS :</h2>
         <div class="choix-tarifs">
           <button class="choix active-choix">BASIC</button>
           <button class="choix">STANDARD</button>
@@ -228,36 +222,20 @@
             </table>
           </div>
         </div>
+        <a
+          class="form-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://11v0iww8gdh.typeform.com/to/bry3kStN"
+        >
+          <button>Formulaire de Contact</button>
+        </a>
       </div>
-
-      <!-- Section Contact -->
-
-    <h2 class="titre-contact">FORMULAIRE</h2>
-
-    <section id="contact">
-      <form>
-        <label for="nom">NOM *</label>
-        <input type="text" id="nom" />
-        <label for="entreprise">ENTREPRISE</label>
-        <input type="text" id="entreprise" />
-        <label for="telephone">TELEPHONE</label>
-        <input type="text" id="telephone" />
-        <label for="email">EMAIL *</label>
-        <input type="text" id="email" />
-
-
-        <label for="txt-area">MESSAGE</label>
-        <textarea id="txt-area"></textarea>
-
-        <button class="form-btn  send" type="submit">Envoyer</button>
-      </form>
-    </section>
-
     </main>
     <!-- Footer -->
     <footer>
       <div class="bloc footer-medias">
-        <h3 id="contact">Contacts</h3>
+        <h3 id="contact">Réseaux</h3>
         <ul class="liste-media">
           <li>
             <a
@@ -268,42 +246,49 @@
             /></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/oliive33/"
-            target="_blank"
-            rel="noopener noreferrer"">
-              <img src="ressources/insta.svg"  sizes="30vw"
-              width="30"
-              height="30"
-              srcset=" ./ressources/insta.svg 30w"
-              alt="icone instagram" />
+            <a
+              href="https://www.instagram.com/oliive33/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="ressources/insta.svg"
+                sizes="30vw"
+                width="30"
+                height="30"
+                srcset="./ressources/insta.svg 30w"
+                alt="icone instagram"
+              />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/olivier-villevieille-25533014a/"
-            target="_blank"
-            rel="noopener noreferrer">
-              <img src="ressources/linkedin.svg" sizes="30vw"
-              width="30"
-              height="30"
-              srcset="
-               
-                ./ressources/linkedin.svg 30w
-              "
-              alt="icone linkedin" />
+            <a
+              href="https://www.linkedin.com/in/olivier-villevieille-25533014a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="ressources/linkedin.svg"
+                sizes="30vw"
+                width="30"
+                height="30"
+                srcset="./ressources/linkedin.svg 30w"
+                alt="icone linkedin"
+              />
             </a>
           </li>
           <li>
-            <a href="https://github.com/Oliive33"
-            target="_blank"
-            rel="noopener noreferrer"">
+            <a
+              href="https://github.com/Oliive33"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="./ressources/github.svg"
                 sizes="30vw"
                 width="30"
                 height="30"
-                srcset="
-                  ./ressources/github.svg 30w
-                "
+                srcset="./ressources/github.svg 30w"
                 alt="icone github"
               />
             </a>
@@ -325,15 +310,17 @@
       </p>
     </footer>
     <!-- Email js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function() {
-          
-          emailjs.init("user_g7CURJrWMliiDLtwUyi4m");
+      (function () {
+        emailjs.init("user_g7CURJrWMliiDLtwUyi4m");
       })();
     </script>
     <!-- Main js -->
-   
+
     <script src="js/index.js"></script>
   </body>
 </html>
