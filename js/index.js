@@ -6,7 +6,7 @@ const contenuTarifs = Array.from(document.querySelectorAll(".panneau"));
 choixTarifs.forEach((choix) => {
   choix.addEventListener("click", (e) => {
     let indexClic = choixTarifs.indexOf(e.target);
-    // console.log(indexClic);
+    console.log(indexClic);
 
     for (let i = 0; i < choixTarifs.length; i++) {
       if (i === indexClic) {
@@ -42,7 +42,7 @@ choixTarifs.forEach((choix) => {
 // document.querySelector(".send").addEventListener("click", send());
 
 //Btn
-function btnHover() {
+function BtnHover() {
   document.querySelector(".form-btn").addEventListener("mousemove", (e) => {
     const x = e.pageX - e.target.offsetLeft;
     const y = e.pageY - e.target.offsetTop;
@@ -53,4 +53,4 @@ function btnHover() {
     e.target.style.setProperty("--y", `${y}px`);
   });
 }
-btnHover();
+BtnHover();
