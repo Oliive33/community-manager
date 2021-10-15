@@ -6,7 +6,7 @@ const contenuTarifs = Array.from(document.querySelectorAll(".panneau"));
 choixTarifs.forEach((choix) => {
   choix.addEventListener("click", (e) => {
     let indexClic = choixTarifs.indexOf(e.target);
-    console.log(indexClic);
+    // console.log(indexClic);
 
     for (let i = 0; i < choixTarifs.length; i++) {
       if (i === indexClic) {
@@ -19,27 +19,46 @@ choixTarifs.forEach((choix) => {
     }
   });
 });
-// email js
+//ScrollTrigger
+const presentationContainer = document.getElementById("#home");
+const titrePres = document.querySelector(".titre-global");
+const ligne = document.querySelector("hr");
+const pres1 = document.querySelector(".vague1");
+const pres2 = document.querySelector(".vague2");
+const pres3 = document.querySelector(".vague3");
+const formContact = document.querySelector(".form");
+const containerTarifs = document.querySelector(".container-tarifs");
 
-// function send() {
-//   emailjs
-//     .send("service_qlypdrv", "template_q4hefec", {
-//       name: document.querySelector("#nom").value,
-//       company: document.querySelector("#entreprise").value,
-//       phone: document.querySelector("#telephone").value,
-//       email: document.querySelector("#email").value,
-//       message: document.querySelector("#txt-area").value,
-//     })
-//     .then(
-//       (response) => {
-//         console.log("succes", response.status);
-//       },
-//       (error) => {
-//         console.log(error);
-//       }
-//     );
-// }
-// document.querySelector(".send").addEventListener("click", send());
+const tlpres = new TimelineMax();
+
+tlpres
+  .from(titrePres, { y: -50, opacity: 0, duration: 0.8, delay: 0.3 })
+  .from(ligne, { y: 0, opacity: 0, duration: 0.5, delay: 0.5 })
+  .from(pres1, { y: -20, opacity: 0, duration: 0.6, delay: 0.8 }, "-=0.5")
+  .from(pres2, { y: -20, opacity: 0, duration: 0.6, delay: 0.9 }, "-=0.5")
+  .from(pres3, { y: -20, opacity: 0, duration: 0.6, delay: 1.2 }, "-=0.5")
+  .from(
+    containerTarifs,
+    { y: -30, opacity: 0, duration: 0.6, delay: 1.9 },
+    "-=0.5"
+  )
+  .from(
+    formContact,
+    { y: -30, opacity: 0, duration: 0.6, delay: 2.5 },
+    "-=0.5"
+  );
+
+const controller = new ScrollTrigger.Controller();
+
+const scene = new ScrollTrigger.Scene({
+  triggerElement: presentationContainer,
+  triggerHook: 0.9,
+  pin: true,
+  reverse: false,
+})
+  .setTween(tlpres)
+  .addIndicators()
+  .addTo(controller);
 
 //Btn
 function BtnHover() {
@@ -54,3 +73,11 @@ function BtnHover() {
   });
 }
 BtnHover();
+// Scroll up
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+  // Si on le scroll est supérieur ou égale à 200vh
+  if (this.scrollY >= 200) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);

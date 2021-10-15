@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prestations Community-Manager</title>
+    <title>Community-Manager-hosting</title>
     <meta
       name="description"
-      content="Ceci est un site vitrine, de prestations community-manager, contenant trois type de tarifs: Basic, Standard, Premium"
+      content="Ceci est un site vitrine, de prestations community-manager et hébergement web, contenant trois type de tarifs: Basic, Standard, Premium"
     />
     <meta property="og:title" content="homemade-web" />
-    <meta property="og:type" content="Prestations Community-Manager" />
+    <meta property="og:type" content="Community-Manager-hosting" />
     <meta
       property="og:description"
-      content="Page web prestations community-manager, avec trois tarifs : basic, standard et premium"
+      content="Page web prestations community-manager et hébergement web, avec trois tarifs : basic, standard et premium"
     />
     <meta property="og:url" content="" />
     <meta property="og:image" content="https://ressoures/logo.png" />
@@ -47,6 +47,12 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <nav id="navbar">
@@ -54,13 +60,9 @@
         <img src="./ressources/logo-avatar.png" alt="logo" />
         <ul class="nav-links">
           <li><a href="#home">Community Manager</a></li>
+          <li><a href="#hosting">Hosting</a></li>
           <li>
-            <a
-              href="https://www.homemade-web.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Developpement</a
-            >
+            <a href="#developpement">Developpement</a>
           </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -69,9 +71,93 @@
     <main>
       <!-- Container global -->
       <h1 id="home" class="titre-global titre-tarifs">
-        Trouvez le tarif qu'il vous faut.
+        Trouvez la formule qu'il vous faut.
       </h1>
       <hr class="separation" />
+      <!-- Presentation -->
+      <section class="section" id="section--1">
+        <div class="features vague1">
+          <img
+            src="ressources/img/community-manager.jpg"
+            data-src="img/digital.jpg"
+            alt="social media"
+            class="features__img lazy-img"
+          />
+          <div class="features__feature">
+            <div class="features__icon">
+              <svg>
+                <use
+                  xlink:href="./ressources/img/icons.svg#icon-facebook"
+                ></use>
+              </svg>
+            </div>
+
+            <h5 class="features__header">100% Connecté</h5>
+
+            <p id="hosting">
+              Bien définir sa stratégie <strong>Social Media</strong> pour votre
+              visibilité, votre image de marque et rester connecté à votre
+              communauté, choisissez la bonne formule. Rendez-vous dans mes
+              <strong>prestations</strong> pour décider du plan à adopter.
+            </p>
+          </div>
+
+          <div class="features__feature vague2">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="./ressources/img/icons.svg#icon-home"></use>
+              </svg>
+            </div>
+            <div class="titles">
+              <h5 class="features__header">Home Sweet Home</h5>
+            </div>
+            <p id="developpement">
+              Un bon hébergement c'est important en toute circonstances, ici
+              pour le web ça passe par <strong>OVH</strong> , hébergeur
+              français, maintenance, mise jour, nom de domaine, tout ces
+              services que je mets à disposition pour <strong>vous</strong> !
+            </p>
+          </div>
+          <img
+            src="ressources/img/hosting.jpg"
+            data-src="img/grow.jpg"
+            alt="computer"
+            class="features__img lazy-img"
+          />
+
+          <img
+            src="ressources/img/development.jpg"
+            data-src="img/card.jpg"
+            alt="website"
+            class="features__img lazy-img"
+          />
+          <div class="features__feature vague3">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="ressources/img/icons.svg#icon-monitor"></use>
+              </svg>
+            </div>
+            <div class="titles">
+              <h5 class="features__header">Création de sites</h5>
+            </div>
+
+            <p>
+              <strong>Community Manager</strong>,
+              <strong>Hébergeur</strong> what else? Je crée également des sites,
+              rendez-vous sur mon
+              <a
+                href="https://www.homemade-web.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Portfolio 🔗</strong></a
+              >
+              nous pouvons travailler ensemble de A à Z sur votre projet, pour
+              en discuter mes coordonnées sont disponibles en bas du site alors
+              à très vite !
+            </p>
+          </div>
+        </div>
+      </section>
       <div class="container-tarifs">
         <h2 class="titre-secondaire titre-tarifs">PRESTATIONS :</h2>
         <div class="choix-tarifs">
@@ -102,10 +188,6 @@
                 <td>✔️</td>
               </tr>
               <tr>
-                <td>Gestion des contacts et relais des messages privés</td>
-                <td>❌</td>
-              </tr>
-              <tr>
                 <td>Création graphique</td>
                 <td>❌</td>
               </tr>
@@ -118,12 +200,26 @@
                 <td>semestriel</td>
               </tr>
               <tr>
-                <td>Prix mensuel sans engagement</td>
-                <td>99€/mois</td>
+                <td><em>Formule Basic</em></td>
+                <td>29€/Mois</td>
               </tr>
               <tr>
-                <td>Prix mensuel avec engagement de 12 mois (-30%)</td>
-                <td>69€/mois</td>
+                <td>
+                  Option Pack Hosting (Hébergement, Nom de Domaine, Maintenance,
+                  1 modification mensuelle) + 1 Email Pro
+                </td>
+                <td>90€</td>
+              </tr>
+              <tr>
+                <td>
+                  Option Pack Hosting avec engagement de 12 mois à la formule
+                  Basic
+                </td>
+                <td>Offert la Première Année</td>
+              </tr>
+              <tr>
+                <td>Option Pack SEO (Référencement Naturel + Accessibilité)</td>
+                <td>99€</td>
               </tr>
             </table>
           </div>
@@ -149,7 +245,7 @@
                 <td>✔️</td>
               </tr>
               <tr>
-                <td>Gestion des contacts et relais des messages privés</td>
+                <td>Gestion des contacts et des msg privés</td>
                 <td>✔️</td>
               </tr>
               <tr>
@@ -165,12 +261,31 @@
                 <td>trimestriel</td>
               </tr>
               <tr>
-                <td>Prix mensuel sans engagement</td>
-                <td>199€/mois</td>
+                <td><em>Formule Standard</em></td>
+                <td>59€/Mois</td>
+              </tr>
+              <td>
+                Option Pack Hosting (Hébergement, Nom de Domaine, Maintenance, 2
+                modifications mensuelle) + 2-3 Email Pro
+              </td>
+              <td>90€</td>
+              <tr>
+                <td>
+                  Option Pack Hosting avec ou sans engagement de 12 mois à la
+                  formule Stantard
+                </td>
+                <td>Offert la Première Année</td>
               </tr>
               <tr>
-                <td>Prix mensuel avec engagement de 12 mois (-30%)</td>
-                <td>139€/mois</td>
+                <td>Option Pack SEO (Référencement Naturel + Accessibilité)</td>
+                <td>99€</td>
+              </tr>
+              <tr>
+                <td>
+                  Option Pack SEO avec engagement de 12mois à la formule
+                  Standard
+                </td>
+                <td>Offert</td>
               </tr>
             </table>
           </div>
@@ -212,28 +327,42 @@
                 <td>mensuel</td>
               </tr>
               <tr>
-                <td>Prix mensuel sans engagement</td>
-                <td>299€/mois</td>
+                <td><em>Formule Premium</em></td>
+                <td>99€/Mois</td>
+              </tr>
+              <td>
+                Option Pack Hosting (Hébergement, Nom de Domaine, Maintenance, 4
+                modifications mensuelle) + 4-5 Email Pro
+              </td>
+              <td>90€</td>
+              <tr>
+                <td>
+                  Option Pack Hosting avec engagement de 12 mois à la formule
+                  Premium
+                </td>
+                <td>Offert la Première Année puis -20% en suivant</td>
               </tr>
               <tr>
-                <td>Prix mensuel avec engagement de 12 mois (-30%)</td>
-                <td>209€/mois</td>
+                <td>Option Pack SEO (Référencement Naturel + Accessibilité)</td>
+                <td>Inclus</td>
               </tr>
             </table>
           </div>
         </div>
       </div>
       <!-- Section Contact -->
-      <h2 id="contact" class="titre-contact">FORMULAIRE DE CONTACT</h2>
+      <section id="form-contact" class="form">
+        <h2 id="contact" class="titre-contact">FORMULAIRE DE CONTACT</h2>
 
-      <a
-        class="form-btn"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://11v0iww8gdh.typeform.com/to/bry3kStN"
-      >
-        <span>Cliquer ici</span>
-      </a>
+        <a
+          class="form-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://11v0iww8gdh.typeform.com/to/bry3kStN"
+        >
+          <span>Cliquer ici</span>
+        </a>
+      </section>
     </main>
     <!-- Footer -->
     <footer>
@@ -311,19 +440,19 @@
           >homemade-web.com</a
         >
       </p>
+      <p class="copywrite">
+        &copy; Depuis Octobre-2021 homemade-web.com Tout Droits réservés
+      </p>
     </footer>
-    <!-- Email js -->
-    <!-- <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_g7CURJrWMliiDLtwUyi4m");
-      })();
-    </script> -->
-    <!-- Main js -->
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="fas fa-chevron-up"></i>
+    </a>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
