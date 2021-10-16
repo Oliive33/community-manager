@@ -26,7 +26,6 @@ const ligne = document.querySelector("hr");
 const pres1 = document.querySelector(".vague1");
 const pres2 = document.querySelector(".vague2");
 const pres3 = document.querySelector(".vague3");
-const formContact = document.querySelector(".form");
 const containerTarifs = document.querySelector(".container-tarifs");
 
 const tlpres = new TimelineMax();
@@ -41,23 +40,18 @@ tlpres
     containerTarifs,
     { y: -30, opacity: 0, duration: 0.6, delay: 1.9 },
     "-=0.5"
-  )
-  .from(
-    formContact,
-    { y: -30, opacity: 0, duration: 0.6, delay: 2.5 },
-    "-=0.5"
   );
 
-const controller = new ScrollTrigger.Controller();
+const controller = new ScrollMagic.Controller();
 
-const scene = new ScrollTrigger.Scene({
+const scene = new ScrollMagic.Scene({
   triggerElement: presentationContainer,
   triggerHook: 0.9,
-  pin: true,
+  markers: false,
   reverse: false,
 })
   .setTween(tlpres)
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller);
 
 //Btn
@@ -65,8 +59,6 @@ function BtnHover() {
   document.querySelector(".form-btn").addEventListener("mousemove", (e) => {
     const x = e.pageX - e.target.offsetLeft;
     const y = e.pageY - e.target.offsetTop;
-
-    // console.log(x + " / " + y);
 
     e.target.style.setProperty("--x", `${x}px`);
     e.target.style.setProperty("--y", `${y}px`);
