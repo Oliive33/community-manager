@@ -84,7 +84,6 @@ nav {
   width: 90%;
   margin: auto;
   transition: all 0.3s ease-out;
-  /* height: 10vh; */
 }
 .nav-elements img {
   width: 100px;
@@ -102,7 +101,6 @@ nav {
 }
 .nav-links {
   display: flex;
-  /* justify-content: space-between; */
   list-style-type: none;
 }
 .nav-links,
@@ -196,6 +194,9 @@ h2 {
   font-weight: bolder;
   transition: color 0.1 ease-in-out;
 }
+.prestations {
+  font-size: 22px;
+}
 
 .features__icon {
   display: flex;
@@ -208,8 +209,6 @@ h2 {
   margin-bottom: 2rem;
   box-shadow: 0 0 0 #fff;
   animation: pulse 1.3s infinite;
-  /* opacity: 0;
-  visibility: hidden; */
 }
 @keyframes pulse {
   to {
@@ -227,9 +226,11 @@ h2 {
   position: relative;
   color: #000;
   font-size: 26px;
+  margin-bottom: 5px;
   font-family: var(--font-title);
   transition: color 0.1 ease-in-out;
 }
+
 .features__header:hover,
 .features__feature p strong:hover,
 .features__feature p strong a:hover {
@@ -323,7 +324,6 @@ hr {
   margin: 0 auto;
   height: 100px;
   cursor: pointer;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
@@ -645,6 +645,12 @@ a {
 a:hover {
   font-weight: bolder;
 }
+.link-cgu {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
 .liste-media img {
   width: 30px;
   margin: 10px 10px;

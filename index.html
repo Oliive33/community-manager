@@ -41,7 +41,7 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto:wght@300&display=swap"
@@ -98,7 +98,14 @@
               Bien définir sa stratégie <strong>Social Media</strong> pour votre
               visibilité, votre image de marque et rester connecté à votre
               communauté, choisissez la bonne formule. Rendez-vous dans mes
-              <strong>prestations</strong> pour décider du plan à adopter.
+              <a
+                href="#prestations
+              "
+                class="prestations"
+              >
+                <strong>prestations</strong></a
+              >
+              pour décider du plan à adopter.
             </p>
           </div>
 
@@ -158,7 +165,7 @@
           </div>
         </div>
       </section>
-      <div class="container-tarifs">
+      <div id="prestations" class="container-tarifs">
         <h2 class="titre-secondaire titre-tarifs">PRESTATIONS :</h2>
         <div class="choix-tarifs">
           <button class="choix active-choix">BASIC</button>
@@ -442,6 +449,13 @@
       </p>
       <p class="copywrite">
         &copy; Depuis Octobre-2021 homemade-web.com Tout Droits réservés
+        <a
+          class="link-cgu"
+          href="cgu.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Mentions Légales</a
+        >
       </p>
     </footer>
     <!--=============== SCROLL UP ===============-->
@@ -454,6 +468,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.min.js"></script>
   </body>
 </html>
