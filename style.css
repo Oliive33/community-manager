@@ -487,9 +487,15 @@ em {
     font-size: 24px;
     padding-bottom: 30px;
   }
-  .container-tarifs,
   .choix-tarifs {
-    width: 300px;
+    width: 301px;
+  }
+  .choix {
+    font-size: 15px;
+  }
+  td {
+    font-size: 16px;
+    padding: 6px;
   }
 }
 /******************** Section formulaire ********************/
